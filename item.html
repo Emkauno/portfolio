@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>My app</title>
+</head>
+
+<body>
+    <nav class="mobile-nav">
+        <div class="nav__toggler">
+            <div class="nav__button">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="nav__content">
+            <div class="nav__content-header"></div>
+            <ul class="nav__content-links">
+                <li class="nav__link">PERFIL</li>
+                <li class="nav__link">SKILLSET</li>
+                <li class="nav__link">PROYECTOS</li>
+                <li class="nav__link">CONTACTO</li>
+            </ul>
+            <div class="nav__content-social">
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="desktop-nav">
+        <div class="desktop-nav__holder">
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+        </div>
+    </div>
+    <section class="main-content ">
+        <img src="/assets/img/bot.svg" alt="" class="footer">
+        <div class="footer__links">
+            <div class="footer__links-item"></div>
+            <div class="footer__links-item"></div>
+            <div class="footer__links-item"></div>
+            <div class="footer__links-item"></div>
+        </div>
+        <div class="overlay"></div>
+        <div id="background"></div>
+        <div class="proyect-site">
+            <div class="proyect-site__left">
+                <div class="proyect-site__number">
+                    <h1>1</h1>
+                </div>
+                <div class="proyect-site__info">
+                    <div class="proyect-site__title">Coin
+                        <span class="proyect-site__title-sub">Sitio web</span>
+                    </div>
+                    <div class="proyect-site__description">
+                        <p>Landing page realizado para empresa de trading de criptomoneda. Hecho a partir de un diseño
+                            previo en Figma y adaptado para Desktop y Mobile.</p>
+                        <p>Creación de logotipo animado, interacciones, animaciones, edición de imágenes y SVG.</p>
+                        <div class="tech">
+                            <div class="tech-info">
+                                <p>Tecnologías Utilizadas: </p>
+                                <div class="tech-holder">
+                                    <div class="tech-item"></div>
+                                    <div class="tech-item"></div>
+                                    <div class="tech-item"></div>
+                                    <div class="tech-item"></div>
+                                    <div class="tech-item"></div>
+                                </div>
+                            </div>
+                            <button class="main-button">VISITAR SITIO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proyect-site__right">
+                <div class="proyect-site__holder">
+                    <img src="/assets/img/coin.png" alt="Proyecto coin" class="proyect-site--1">
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyect-dash"></div>
+        </div>
+    </section>
+</body>
+
+<script src="/assets/js/three.min.js"></script>
+<script src="/assets/js/vanta.cells.min.js"></script>
+<script>
+    window.onload = () => {
+
+        VANTA.CELLS({
+            el: "#background",
+            mouseControls: false,
+            touchControls: false,
+            minHeight: 1000.00,
+            minWidth: 2000.00,
+            scale: 0.9,
+            color1: 0x0,
+            color2: 0xffffff,
+            size: 5.00,
+            speed: 0.2,
+        })
+
+
+        const menuToggle = (boton, menu, content, overlay) => {
+
+            boton.onclick = () => {
+                boton.classList.contains('is-active') ? (
+                    boton.classList.remove('is-active'),
+                    menu.classList.remove('active'),
+                    overlay.classList.remove('active'),
+                    content.forEach((item) => {
+                        item.classList.remove('active')
+
+                    })
+                ) : (
+                        boton.classList.add('is-active'),
+                        menu.classList.add('active'),
+                        overlay.classList.add('active'),
+                        content.forEach((item) => {
+                            item.classList.add('active')
+                        })
+                    )
+            }
+        }
+
+
+        menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
+    }
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>My app</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__toggler">
+            <div class="nav__button">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="nav__content">
+            <div class="nav__content-header"></div>
+            <ul class="nav__content-links">
+                <li class="nav__link"></li>
+                <li class="nav__link">SITIOS WEB</li>
+                <li class="nav__link">LOGOTIPOS</li>
+                <li class="nav__link"></li>
+            </ul>
+            <div class="nav__content-social">
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+                <div class="nav__content-social-icon"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="desktop-nav">
+        <div class="desktop-nav__holder">
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+            <a class="desktop-nav__item"></a>
+        </div>
+    </div>
+    
+    <section class="main-content ">
+        <div class="overlay"></div>
+        <div id="background"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#wat" class="main-content__item">
+                        <img src="/assets/img/pepe.jpg" alt="" class="proyect">
+                        <div class="main-content__item--header">
+                            <h1 class="primary-heading">
+                                Proyectos
+                            </h1>
+                        </div>
+                        <div class="main-content__item--sub">
+                            <h2>
+                                Item sub content
+                            </h2>
+                        </div>
+                    </a></div>
+                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
+                        <div class="main-content__item--header">
+                            <h1 class="primary-heading">
+                                Proyectos
+                            </h1>
+                        </div>
+                        <div class="main-content__item--sub">
+                            <h2>
+                                Item sub content
+                            </h2>
+                        </div>
+                    </a></div>
+                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
+                        <div class="main-content__item--header">
+                            <h1 class="primary-heading">
+                                Proyectos
+                            </h1>
+                        </div>
+                        <div class="main-content__item--sub">
+                            <h2>
+                                Item sub content
+                            </h2>
+                        </div>
+                    </a></div>
+                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
+                        <div class="main-content__item--header">
+                            <h1 class="primary-heading">
+                                Proyectos
+                            </h1>
+                        </div>
+                        <div class="main-content__item--sub">
+                            <h2>
+                                Item sub content
+                            </h2>
+                        </div>
+                    </a></div>
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+<script src="/assets/js/three.min.js"></script>
+<script src="/assets/js/vanta.cells.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+    window.onload = () => {
+        var menupage = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            loop: true,
+            direction: 'vertical',
+            spaceBetween: 30,
+            speed: 400,
+            centeredSlides: true,
+            initialSlide: 0,
+            slideActiveClass: 'wat',
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                700: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 20
+                }
+            }
+
+        });
+
+        VANTA.CELLS({
+            el: "#background",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            color1: 0x1061d,
+            color2: 0xb3c8de,
+            size: 1.00,
+            speed: 0.10,
+            blurFactor: 0.5
+        })
+
+
+
+
+        const menuToggle = (boton, menu, content, overlay) => {
+
+boton.onclick = () => {
+    boton.classList.contains('is-active') ? (
+        boton.classList.remove('is-active'),
+        menu.classList.remove('active'),
+        overlay.classList.remove('active'),
+        content.forEach((item) => {
+            item.classList.remove('active')
+                
+        })
+    ) : (
+            boton.classList.add('is-active'),
+            menu.classList.add('active'),
+            overlay.classList.add('active'),
+            content.forEach((item) => {
+                item.classList.add('active')
+            })
+        )
+}
+}
+
+
+menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
+}
+
+
+
+</script>
+
+</html>
