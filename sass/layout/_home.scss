@@ -1,10 +1,11 @@
 .home {
-    margin-top: 10rem;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         width: 100%;
@@ -25,7 +26,6 @@
         &--container {
             display: flex;
             flex-direction: column;
-            align-self: flex-end;
             padding: 1rem 2rem;
             border: 1px solid rgba($color-white,.2);
             border-radius: 0.3rem;
@@ -36,8 +36,8 @@
     &__left {
         position: relative;
         right: 10px;
-        height: 100vh;
-        width: 65%;
+        height: 85vh;
+        width: 65%; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,7 +45,8 @@
 
         @media (max-width:400px) {
             height: 40vh;
-            justify-content: flex-end;
+            width: 100%;
+            justify-content: flex-start;
 
         }
     }
@@ -65,13 +66,13 @@
     }
 
     &__info-container {
-        width: 100%;
-        height: 10rem;
-        padding: 0 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
+    width: 100%;
+    height: 12rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
         @media (max-width: 400px) {
             align-items: center;
@@ -138,17 +139,20 @@
 
     &__picture {
         width: 100%;
-        position: absolute;
+        height: 100%;
+        position: relative;
         bottom: 0;
-        transform: translatey(-10rem);
-        animation: slide-in 1.5s cubic-bezier(0.95, 0, 0.33, 1);
-        animation-fill-mode: forwards;
+        animation: blurry 1s cubic-bezier(.39,.03,.04,.97);
+        animation-delay: 1.3s;
+        animation-fill-mode: backwards;
+        transform: translate(-50px, 86px);
 
         @media (max-width: 400px) {
-            width: 180%;
+
             position: relative;
             top: 10rem;
             left: 3rem;
+            transform: scale(1.3) translate(3px, -110px);
         }   
             &--1 {
             width: 100%;

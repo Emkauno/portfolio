@@ -273,3 +273,14 @@
 		opacity: 1;
 	}
 }
+
+@keyframes blurry {
+	0% {
+		opacity: 0;
+		filter: blur(15px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0px);
+	}
+}
