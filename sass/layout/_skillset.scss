@@ -1,6 +1,6 @@
 .skillset {
     margin-top: 10rem;
-    height: calc(100vh - 10rem);
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,15 +8,32 @@
     justify-content: flex-start;
 
     @media (max-width: 400px) {
-        margin-top: 0;
+
         flex-direction: column;
+        width: 100vw;
+    }
+
+    &.animation {
+        margin-top: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media (max-width: 800px) {
+            width: 100vw;
+        }
+        @media (max-width: 350px) {
+            height: unset;
+
+        }
     }
 
     &__title-holder {
         position: relative;
         width: 100%;
-        height: 90px;
-        transform: translateY(40px);
+        transform: translateY(3rem);
        }
 
     &__card {
@@ -25,10 +42,14 @@
         justify-content: center;
         align-items: center;
         width:  45%;
-        height: 25rem;
         
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+
         &-icon {
             width: 6rem;
+            min-width: 6rem;
             margin: 2rem;
             position: relative;
             
@@ -51,34 +72,38 @@
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 position: relative;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: .3rem;
-                    background: $color-primary;
-                    bottom: 0;
-                    right: 0;
-                    animation: appear .5s ease;
+                @media (max-width: 400px) {
+font-size: 2rem    
                 }
             }
         }
 
         &--top {
-            width: 100%;
-            height: 10rem;
+            width: 90%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            background: rgba($color-black,.8);
 
-            &2 {
+            @media (max-width: 400px) {
                 width: 100%;
-                height: 10rem;
+                text-align: right;
+
+            }
+            &2 {
+                width: 90%;
                 display: flex;
                 flex-direction: row-reverse;
                 align-items: center;
                 justify-content: space-between;
+                background: rgba($color-black,.8);
+                @media (max-width: 400px) {
+                    width: 100%;
+                    margin-bottom: 5rem;
+                    flex-direction: row;
+                    text-align: right;
+                }
             }
 
         }
@@ -91,7 +116,7 @@
 
         &-description {
             width: 100%;
-            height: 100%;
+            height: 13rem;
             border-radius: .8rem;
             background: rgba($color-black,.8);
             display: flex;
@@ -102,7 +127,7 @@
 
             p {
                 color: $color-white;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 font-weight: 100;
             }
         }
@@ -115,8 +140,14 @@
         font-weight: 100;
         margin: 0;
         line-height: 0;
-        @media (max-width: 400px) {
-            font-size: 2.9rem;
+        @media (max-width: 800px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 350px){
+            font-size: 1.7rem;
+            margin-left: 1rem;
+        
         }
 
         &:nth-child(2) {
@@ -138,6 +169,11 @@
         align-items: flex-start;
         justify-content: center;
         margin-bottom:5rem;
+
+        @media (max-width: 400px) {
+            flex-direction: column;
+            
+        }
         &-top {
             position: relative;
             width: 100%;

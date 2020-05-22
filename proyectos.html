@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My app</title>
+    <title>Emkauno</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="mobile-nav">
         <div class="nav__toggler">
             <div class="nav__button">
                 <button class="hamburger hamburger--spin" type="button">
@@ -23,164 +23,166 @@
         </div>
         <div class="nav__content">
             <div class="nav__content-header"></div>
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
             <ul class="nav__content-links">
-                <li class="nav__link"></li>
-                <li class="nav__link">SITIOS WEB</li>
-                <li class="nav__link">LOGOTIPOS</li>
-                <li class="nav__link"></li>
+                <li class="nav__link"><a href="/index.html">INICIO</a></li>
+                <li class="nav__link"><a href="/skillset.html">SKILLSET | STACK</a></li>
+                <li class="nav__link"><a href="/proyectos.html">PROYECTOS</a></li>
+                <li class="nav__link"><a href="/contacto.html">CONTACTO</a></li>
             </ul>
             <div class="nav__content-social">
-                <div class="nav__content-social-icon"></div>
-                <div class="nav__content-social-icon"></div>
-                <div class="nav__content-social-icon"></div>
-                <div class="nav__content-social-icon"></div>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/linkedin.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/github.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/behance.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/steam.svg" alt="" class="icon-svg">
+                </a>
             </div>
         </div>
     </nav>
+
     <div class="desktop-nav">
         <div class="desktop-nav__holder">
-            <a class="desktop-nav__item"></a>
-            <a class="desktop-nav__item"></a>
-            <a class="desktop-nav__item"></a>
-            <a class="desktop-nav__item"></a>
+            <a href="/skillset.html" class="desktop-nav__item--1">
+                <img src="/assets/img/icons/stack.svg" alt="Skillset">
+            </a>
+            <a href="/proyectos.html" class="desktop-nav__item--2">
+                <img src="/assets/img/icons/proyects.svg" alt="Proyects">
+            </a>
+            <a href="/contacto.html" class="desktop-nav__item--3">
+                <img src="/assets/img/icons/contact.svg" alt="">
+            </a>
         </div>
     </div>
-    
-    <section class="main-content ">
-        <div class="overlay"></div>
-        <div id="background"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#wat" class="main-content__item">
-                        <img src="./assets/img/pepe.jpg" alt="" class="proyect">
-                        <div class="main-content__item--header">
-                            <h1 class="primary-heading">
-                                Proyectos
-                            </h1>
-                        </div>
-                        <div class="main-content__item--sub">
-                            <h2>
-                                Item sub content
-                            </h2>
-                        </div>
-                    </a></div>
-                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
-                        <div class="main-content__item--header">
-                            <h1 class="primary-heading">
-                                Proyectos
-                            </h1>
-                        </div>
-                        <div class="main-content__item--sub">
-                            <h2>
-                                Item sub content
-                            </h2>
-                        </div>
-                    </a></div>
-                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
-                        <div class="main-content__item--header">
-                            <h1 class="primary-heading">
-                                Proyectos
-                            </h1>
-                        </div>
-                        <div class="main-content__item--sub">
-                            <h2>
-                                Item sub content
-                            </h2>
-                        </div>
-                    </a></div>
-                <div class="swiper-slide"> <a href="#wat" class="main-content__item">
-                        <div class="main-content__item--header">
-                            <h1 class="primary-heading">
-                                Proyectos
-                            </h1>
-                        </div>
-                        <div class="main-content__item--sub">
-                            <h2>
-                                Item sub content
-                            </h2>
-                        </div>
-                    </a></div>
-            </div>
+    <section class="slider-page">
+        <div class="slider__name-holder">
+            <h1 class="home__title port">EMKAUNO</h1>
+            <h1 class="home__title port">EMKAUNO</h1>
+            <h1 class="home__title port">EMKAUNO</h1>
 
         </div>
+        <div class="navigation-holder">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="slider-overlay">
+            
+            <img src="/assets/img/overlaytop.png" alt="" class="overlaytop">
+            <img src="/assets/img/overlaybot.png" alt="" class="overlaybot">
+        </div>
+        <div class="swiper-container">
 
-
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slider__header">
+                        <h1>SITIOS WEB</h1>
+                    </div>
+                    <div class="slider__body">
+                        <p class="slider__p">
+                            Sitios web desarrollados en HTML5, CSS3 y JS, con el apoyo de herramientas de prototipado y diseño 
+                        </p>
+                        <a href="/sitiosweb.html" class="slider__button">GO FOR IT</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__header">
+                        <h1>DISEÑO GRÁFICO | ILUSTRACIÓN</h1>
+                    </div>
+                    <div class="slider__body">
+                        <p class="slider__p">
+                           Logotipos, ilustraciones y proyectos personales.
+                        </p>
+                        <a href="/diseno.html" class="slider__button">VER PROYECTO</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__header">
+                        <h1>ANIMACIÓN</h1>
+                    </div>
+                    <div class="slider__body">
+                        <p class="slider__p">
+                            Proyectos de animación, utilizando After Effects y Lottie
+                        </p>
+                        <a href="/animacion.html" class="slider__button">VER PROYECTO</a>
+                    </div>
+                </div>
+            </div>
     </section>
+    <footer class="footer">
+        <img src="./assets/img/splatter.png" class="footer__splatter">
+        <div class="footer__links">
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/linkedin.svg" alt="" class="icon-svg">
+            </a>
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/github.svg" alt="" class="icon-svg">
+            </a>
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/behance.svg" alt="" class="icon-svg">
+            </a>
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/steam.svg" alt="" class="icon-svg">
+            </a>
+        </div>
+    </footer>
+
+
 </body>
-<script src="./assets/js/three.min.js"></script>
-<script src="./assets/js/vanta.cells.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script>
+
     window.onload = () => {
+        
+
         var menupage = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            loop: true,
+            slidesPerView: 'auto',
+            loop: false,
             direction: 'vertical',
             spaceBetween: 30,
             speed: 400,
             centeredSlides: true,
             initialSlide: 0,
-            slideActiveClass: 'wat',
-            slideToClickedSlide: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-            breakpoints: {
-                700: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 20
-                }
-            }
-
         });
-
-        VANTA.CELLS({
-            el: "#background",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            color1: 0x1061d,
-            color2: 0xb3c8de,
-            size: 1.00,
-            speed: 0.10,
-            blurFactor: 0.5
-        })
-
-
-
 
         const menuToggle = (boton, menu, content, overlay) => {
 
-boton.onclick = () => {
-    boton.classList.contains('is-active') ? (
-        boton.classList.remove('is-active'),
-        menu.classList.remove('active'),
-        overlay.classList.remove('active'),
-        content.forEach((item) => {
-            item.classList.remove('active')
-                
-        })
-    ) : (
-            boton.classList.add('is-active'),
-            menu.classList.add('active'),
-            overlay.classList.add('active'),
-            content.forEach((item) => {
-                item.classList.add('active')
-            })
-        )
-}
-}
+            boton.onclick = () => {
+                boton.classList.contains('is-active') ? (
+                    boton.classList.remove('is-active'),
+                    menu.classList.remove('active'),
+                    overlay.classList.remove('active'),
+                    content.forEach((item) => {
+                        item.classList.remove('active')
+
+                    })
+                ) : (
+                        boton.classList.add('is-active'),
+                        menu.classList.add('active'),
+                        overlay.classList.add('active'),
+                        content.forEach((item) => {
+                            item.classList.add('active')
+                        })
+                    )
+            }
+        }
 
 
-menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
-}
+        menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
+    }
 
 
 

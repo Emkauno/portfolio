@@ -19,8 +19,6 @@
         align-items: center;
         justify-content: space-around;
 
-        
-        
 
         @media (max-width: 850px){
             display: none;
@@ -40,13 +38,16 @@
         }
     }
     &__splatter {
+        display: block;
         position: absolute;
         right: 0;
         bottom: 0;
         width: 100px;
         height: 100px;
         transform: rotate(80deg) translatex(24%) translatey(31%) scale(-1.7);
-
+        @media (max-width: 850px){
+            display: none;
+        }
     }
 
 }
