@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Emkauno</title>
+</head>
+
+<body>
+    <nav class="mobile-nav">
+        <div class="nav__toggler">
+            <div class="nav__button">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="nav__content">
+            <div class="nav__content-header"></div>
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
+            <ul class="nav__content-links">
+                <li class="nav__link"><a href="/index.html">INICIO</a></li>
+                <li class="nav__link"><a href="/skillset.html">SKILLSET | STACK</a></li>
+                <li class="nav__link"><a href="/proyectos.html">PROYECTOS</a></li>
+                <li class="nav__link"><a href="/contacto.html">CONTACTO</a></li>
+            </ul>
+            <div class="nav__content-social">
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/linkedin.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/github.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/behance.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#" class="nav__content-social-icon">
+                    <img src="/assets/img/icons/steam.svg" alt="" class="icon-svg">
+                </a>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="desktop-nav">
+        <div class="desktop-nav__holder">
+            <a href="/skillset.html" class="desktop-nav__item--1">
+                <img src="/assets/img/icons/stack.svg" alt="Skillset">
+            </a>
+            <a href="/proyectos.html" class="desktop-nav__item--2">
+                <img src="/assets/img/icons/proyects.svg" alt="Proyects">
+            </a>
+            <a href="/contacto.html" class="desktop-nav__item--3">
+                <img src="/assets/img/icons/contact.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <section class="home">
+        
+        <div class="home__left">
+            <div class="home__picture">
+                <img src="/assets/img/emk/glitch.png" alt="" class="home__picture--1">
+                <img src="/assets/img/emk/3d.png" alt="" class="home__picture--2">
+                <img src="/assets/img/emk/full.png" alt="" class="home__picture--3">
+                <img src="/assets/img/emk/splatterbg.png" alt="" class="home__picture--4">
+            </div>
+        </div>
+
+        <div class="home__right">
+            <div class="home__info-container">
+                <h1 class="home__title">EMKAUNO</h1>
+                <h1 class="home__title">EMKAUNO</h1>
+                <h1 class="home__title">EMKAUNO</h1>
+                <div class="home__sub">WENA WENA</div>
+            </div>
+            
+            <div class="home__section--container">
+                <p class="home__sub--2">Hola, soy Esteban.</p>
+            <p class="home__sub--2"> Desarrollador Front-end, apasionado por el diseño gráfico, ilustración, animación y los videojuegos.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/img/splatter.png" class="footer__splatter">
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/esteban-soto-santiagos/" class="footer__links-item">
+                <img src="/assets/img/icons/linkedin.svg" alt="" class="icon-svg">
+            </a>
+            <a href="https://github.com/emkauno" class="footer__links-item">
+                <img src="/assets/img/icons/github.svg" alt="" class="icon-svg">
+            </a>
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/behance.svg" alt="" class="icon-svg">
+            </a>
+            <a href="#" class="footer__links-item">
+                <img src="/assets/img/icons/steam.svg" alt="" class="icon-svg">
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    
+    window.onload = () => {
+
+        const menuToggle = (boton, menu, content, overlay) => {
+
+            boton.onclick = () => {
+                boton.classList.contains('is-active') ? (
+                    boton.classList.remove('is-active'),
+                    menu.classList.remove('active'),
+                    overlay.classList.remove('active'),
+                    content.forEach((item) => {
+                        item.classList.remove('active')
+
+                    })
+                ) : (
+                        boton.classList.add('is-active'),
+                        menu.classList.add('active'),
+                        overlay.classList.add('active'),
+                        content.forEach((item) => {
+                            item.classList.add('active')
+                        })
+                    )
+            }
+        }
+
+
+        menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
+    }
+
+
+
+</script>
+
+</html>
