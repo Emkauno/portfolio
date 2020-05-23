@@ -468,6 +468,14 @@ z-index: -1;
  width: 15rem;
  height: 15rem;
  padding: 0;
+ @media (max-width: 800px) {
+    width: 10rem;
+    height: 10rem;
+}
+@media (max-width: 350px) {
+    width: 9rem;
+    height: 9rem;
+}
 }
 #yup2 {
     max-height: 80vh;
