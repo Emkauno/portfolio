@@ -10,6 +10,20 @@
     &__sub {
         margin: 2rem 0;
     }
+    &__a {
+        text-decoration:none;
+        font-size: 2rem;
+        font-weight: 400;
+        border: 1px solid rgba($color-white,.5);
+        padding: 1rem 2rem;
+        background-color: transparent;
+        color: $color-white;
+        transition: color .5s ease, background-color  .5s ease;
+        &:hover {
+            color: $color-black;
+            background-color: $color-white;
+        }
+    }
     &__form {
         border: 1px solid rgba($color-white,.3);
         border-radius: .8rem;
@@ -20,6 +34,10 @@
         padding: 2rem;
         color: $color-white;
         font-size: 1.5rem;
+        @media (max-width:400px) {
+            align-items: center;
+            width: 90%;
+        }
     }
     &__label {
         display: flex;
@@ -30,6 +48,9 @@
         border-radius: .8rem;
         font-size: 1.8rem;
         text-transform: uppercase;
+        @media (max-width:400px) {
+            width: 100%;
+        }
     }
 
     &__input {
@@ -42,6 +63,9 @@
         color: $color-white;
         padding: 0 1rem;
         font-size: 1.8rem;
+        @media (max-width:400px) {
+           width: 100%;
+        }
     }
 
     &__textarea {
@@ -56,6 +80,10 @@
         color: $color-white;
         padding: 1rem;
         font-size: 1.8rem;
+        @media (max-width:400px) {
+            width: 105%;
+            align-self: center;
+        }
     }
 
     &__button {
@@ -82,5 +110,10 @@
 input:focus, textarea:focus, select:focus{
     border: .15rem solid rgba($color-white,.5);
     outline: none;
+
+}
+
+.success {
+    margin-top: 10rem;
 
 }
