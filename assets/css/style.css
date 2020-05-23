@@ -208,7 +208,8 @@ body {
   filter: grayscale(80%);
   transition: filter .5s ease;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   @media (max-width: 800px) {
     .swiper-slide {
       height: 30%; } }
@@ -1023,10 +1024,10 @@ body {
     padding: 0 10rem; }
   .desktop-nav__item, .desktop-nav__item--1, .desktop-nav__item--2, .desktop-nav__item--3 {
     position: relative;
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
-    border: 1px solid rgba(202, 36, 55, 0.2);
+    border: 1px solid rgba(238, 238, 238, 0.2);
     background: rgba(19, 19, 19, 0.4);
     cursor: pointer;
     display: flex;

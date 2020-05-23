@@ -204,6 +204,8 @@
     transition: filter .5s ease;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    
     @media (max-width: 800px) {
         height: 30%;
      }
