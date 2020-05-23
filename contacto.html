@@ -61,31 +61,28 @@
             </a>
         </div>
     </div>
-    <section class="home">
-        
-        <div class="home__left">
-            <div class="home__picture">
-                <img src="/assets/img/emk/glitch.png" alt="" class="home__picture--1">
-                <img src="/assets/img/emk/3d.png" alt="" class="home__picture--2">
-                <img src="/assets/img/emk/full.png" alt="" class="home__picture--3">
-                <img src="/assets/img/emk/splatterbg.png" alt="" class="home__picture--4">
-            </div>
+    <section class="contact">
+        <div class="home__info-container">
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
+            <h1 class="home__title">EMKAUNO</h1>
+            <p class="home__sub contact__sub">Hablemos :)</p>
         </div>
 
-        <div class="home__right">
-            <div class="home__info-container">
-                <h1 class="home__title">EMKAUNO</h1>
-                <h1 class="home__title">EMKAUNO</h1>
-                <h1 class="home__title">EMKAUNO</h1>
-                <div class="home__sub">WENA WENA</div>
-            </div>
-            
-            <div class="home__section--container">
-                <p class="home__sub--2">Hola, soy Esteban.</p>
-            <p class="home__sub--2"> Desarrollador Front-end, apasionado por el diseño gráfico, ilustración, animación y los videojuegos.
-                </p>
-            </div>
-        </div>
+        <form class="contact__form" name="contact" method="POST" data-netlify="true">
+            <p>
+              <label class="contact__label">Nombre <input class="contact__input" type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label class="contact__label">Email <input class="contact__input" type="email" name="email" /></label>
+            </p>
+            <p>
+              <label class="contact__label">Mensaje <textarea class="contact__textarea" name="message"></textarea></label>
+            </p>
+            <p>
+              <button class="contact__button" type="submit"><p>Enviar</p></button>
+            </p>
+          </form>
 
     </section>
 
