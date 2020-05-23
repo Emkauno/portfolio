@@ -74,7 +74,7 @@
     align-items: center;
     justify-content: center;
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             align-items: center;
         }
     }
@@ -147,7 +147,7 @@
         animation-fill-mode: backwards;
         transform: translate(-50px, 86px);
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
 
             position: relative;
             top: 10rem;
@@ -205,7 +205,7 @@
     bottom: 0;
     transform: translateY(50rem) scale(-1, 0.3);
     display: none;
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
        top: -261px;
        left: 0;
        transform: translateY(50rem) scale(-1, 0.5);

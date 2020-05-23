@@ -7,7 +7,7 @@
     align-items: space-between;
     justify-content: flex-start;
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
 
         flex-direction: column;
         width: 100vw;
@@ -43,7 +43,7 @@
         align-items: center;
         width:  45%;
         
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             width: 100%;
         }
 
@@ -72,7 +72,7 @@
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 position: relative;
-                @media (max-width: 400px) {
+                @media (max-width: 500px) {
 font-size: 2rem    
                 }
             }
@@ -86,7 +86,7 @@ font-size: 2rem
             justify-content: space-between;
             background: rgba($color-black,.8);
 
-            @media (max-width: 400px) {
+            @media (max-width: 500px) {
                 width: 100%;
                 text-align: right;
                 height: 7rem;
@@ -99,7 +99,7 @@ font-size: 2rem
                 align-items: center;
                 justify-content: space-between;
                 background: rgba($color-black,.8);
-                @media (max-width: 400px) {
+                @media (max-width: 500px) {
                     width: 100%;
                     margin-bottom: 2.5rem;
                     height: 7rem;
@@ -172,7 +172,7 @@ font-size: 2rem
         justify-content: center;
         margin-bottom:5rem;
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             flex-direction: column;
             margin-bottom: 2.5rem;
             

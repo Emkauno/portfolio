@@ -7,18 +7,18 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         flex-direction: column;
     }
     &2 {
         flex-direction: row-reverse;
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             flex-direction: column;
             margin-top: 0;
         }
     }
     &3 {
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             flex-direction: column;
             margin-top: 0;
         }
@@ -130,7 +130,7 @@
                 line-height: 40rem;
             }
 
-            @media (max-width: 400px) {
+            @media (max-width: 500px) {
                 font-size: 30rem;
                 line-height: 22rem;
             }
@@ -160,7 +160,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             width: 100%;
             justify-content: space-around;
         }
@@ -231,7 +231,7 @@
                 margin-right: 2rem;
             }
 
-            @media (max-width: 400px) {
+            @media (max-width: 500px) {
                 font-size: 1.2rem;
                 margin-top: -2rem;
                 font-weight: 400;
@@ -257,7 +257,7 @@
         color: $color-white;
         margin-bottom: -1rem;
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             margin-bottom: 4rem;
             margin-right: 2rem;
             font-size: 5rem;
@@ -280,7 +280,7 @@
             line-height: 2rem;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             width: 100%;
         }
     }
@@ -413,7 +413,7 @@
     height: 3rem;
     width: 3rem;
     margin-right: 1rem;
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         margin-right: .8rem;
     }
 }
