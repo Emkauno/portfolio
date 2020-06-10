@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Emkauno</title>
 </head>
@@ -57,12 +58,13 @@
                 <img src="/assets/img/icons/proyects.svg" alt="Proyects">
             </a>
             <a href="/contacto.html" class="desktop-nav__item--3">
-                <img src="/assets/img/icons/stack.svg" alt="">
+                <img src="/assets/img/icons/contact.svg" alt="">
             </a>
         </div>
     </div>
 
-       <section class="proyect-site">
+       <section class="proyect-site" data-aos="fade-up"
+       data-aos-anchor-placement="top-center">
         <div class="proyect-site__left">
             <img src="./assets/img/splatter.png" alt="" class="splatter__proyect1">
             <div class="proyect-site__info">
@@ -129,7 +131,8 @@
             </div>
         </div>
     </section>
-    <section class="proyect-site2">
+    <section class="proyect-site2" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="proyect-site__left2">
             <img src="./assets/img/splatter.png" alt="" class="splatter__proyect2">
             <div class="proyect-site__info">
@@ -188,6 +191,70 @@
             </div>
         </div>
     </section> 
+    <section class="proyect-site" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+        <div class="proyect-site__left">
+            <img src="./assets/img/splatter.png" alt="" class="splatter__proyect1">
+            <div class="proyect-site__info">
+                <div class="proyect-site__header">
+                    <h1 class="proyect-site__title">Coin</h1>
+                   <div class="proyect-site__link-holder">
+                    <a href="https://github.com/Emkauno/innk" class="proyect-site__header-sub">
+                        <img src="/assets/img/icons/github.svg" alt="" class="icon-svg">
+                      <span>repo</span>
+                    </a>
+
+                    <a href="https://emkauno.github.io/innk/" class="proyect-site__header-sub">
+                        <img src="/assets/img/icons/web.svg" alt="" class="icon-svg">
+                        <span>Visitar Sitio</span>
+                    </a>
+         
+                   </div>
+                </div>
+                
+                <div class="proyect-site__description">
+                    <p>Replanteamiento de Homepage de sitio de la Dirección Meteorológica de Chile, cuyo objetivo central fue el enfoque en el usuario y su accesibilidad a los datos, de forma rápida y demostrativa.</p>
+                    <p>Diseño y creación de prototipo en Figma (Desktop y Mobile), maquetación, programación de funcionalidades y creación de SVG.</p>
+                    <div class="tech">
+                        <div class="tech-info">
+                            <p>Tecnologías Utilizadas: </p>
+                            <div class="tech-holder">
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/figma.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/illustrator.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/photoshop.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/lottie.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/html5.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/css3.svg" alt="">
+                                </div>
+                                <div class="tech-item">
+                                  <img src="/assets/img/icons/javascript.svg" alt="">
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="proyect-site__right">
+            <div class="proyect-site__holder weather-proyect">
+                <img src="./assets/img/weather.png" alt="" class="proyect-site--1">
+            </div>
+        </div>
+    </section>
 
         <div class="footer__links">
             <div class="footer__links-item"></div>
@@ -198,37 +265,11 @@
    
 </body>
 
+<script src="assets/js/app.js"></script>
+<script src="assets/js/aos.js"></script>
 <script>
-    window.onload = () => {
-
-        const menuToggle = (boton, menu, content, overlay) => {
-
-            boton.onclick = () => {
-                boton.classList.contains('is-active') ? (
-                    boton.classList.remove('is-active'),
-                    menu.classList.remove('active'),
-                    overlay.classList.remove('active'),
-                    content.forEach((item) => {
-                        item.classList.remove('active')
-
-                    })
-                ) : (
-                        boton.classList.add('is-active'),
-                        menu.classList.add('active'),
-                        overlay.classList.add('active'),
-                        content.forEach((item) => {
-                            item.classList.add('active')
-                        })
-                    )
-            }
-        }
-
-
-        menuToggle(document.querySelector('.hamburger'), document.querySelector('.nav__content'), document.querySelectorAll('.main-content'), document.querySelector('.overlay'));
-    }
-
-
-
+    AOS.init();
 </script>
+
 
 </html>

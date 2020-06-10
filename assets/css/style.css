@@ -1560,7 +1560,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 5rem; }
     @media (max-width: 850px) {
       .proyect-site__right, .proyect-site2__right, .proyect-site3__right {
@@ -1573,7 +1573,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 5rem; }
     @media (max-width: 850px) {
       .proyect-site__right2, .proyect-site2__right2, .proyect-site3__right2 {
