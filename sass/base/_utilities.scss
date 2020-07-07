@@ -140,7 +140,7 @@
     position: relative;
     width: 70%;
     height: 105rem;
-    transform: translatex(200px) translatey(0) rotate(9deg);
+    transform: translatex(282px) translatey(0) rotate(9deg);
 
 
     @media (max-width: 800px) {
@@ -345,14 +345,13 @@ z-index: -1;
         
     }
     &__button {
-        width: 15rem;
+        width: 18rem;
         height:5rem;
         border-radius: .8rem;
         background:rgba($color-black,.1);
         color: $color-white;
         border: 1px solid rgba(255,255,255,.5);
         font-size:1.5rem;
-        padding: 0 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
