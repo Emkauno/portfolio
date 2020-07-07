@@ -149,7 +149,7 @@ body {
   position: relative;
   width: 70%;
   height: 105rem;
-  transform: translatey(32px) rotate(9deg); }
+  transform: translatex(200px) translatey(0) rotate(9deg); }
   @media (max-width: 800px) {
     .swiper-container {
       width: 100%;
@@ -216,7 +216,7 @@ body {
 
 .slide-bg {
   position: absolute;
-  right: 0;
+  right: -100px;
   bottom: 0; }
   .slide-bg--1 {
     position: absolute;
