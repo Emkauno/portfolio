@@ -192,13 +192,13 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: all .2s ease; }
+  transition: all 0.2s ease; }
 
 .swiper-slide {
   padding: 3rem;
   width: 100%;
   height: 35%;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   background: rgba(19, 19, 19, 0.5);
   border: 1px solid rgba(238, 238, 238, 0.3);
   display: flex;
@@ -206,7 +206,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   filter: grayscale(80%);
-  transition: filter .5s ease;
+  transition: filter 0.5s ease;
   position: relative;
   overflow: hidden;
   cursor: pointer; }
@@ -249,10 +249,12 @@ body {
 .swiper-active {
   filter: grayscale(0%); }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   display: block; }
   @media (max-width: 800px) {
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev,
+    .swiper-button-next {
       display: none; } }
 
 .navigation-holder {
@@ -308,19 +310,19 @@ body {
     letter-spacing: 2px;
     width: 50%;
     padding: 2rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     color: #eee;
     background: rgba(19, 19, 19, 0.5); }
     @media (max-width: 800px) {
       .slider__p {
-        font-size: 1.4;
+        font-size: 1.2rem;
         height: unset;
         padding: 0;
         width: 85%; } }
   .slider__button {
     width: 18rem;
     height: 5rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     background: rgba(19, 19, 19, 0.1);
     color: #eee;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -329,15 +331,15 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: all .3s ease; }
+    transition: all 0.3s ease; }
     .slider__button:hover {
       background: rgba(238, 238, 238, 0.1); }
     @media (max-width: 800px) {
       .slider__button {
-        width: 11rem;
+        width: 15rem;
         height: 4rem;
         font-size: 1.2rem;
-        border-radius: .8rem;
+        border-radius: 0.8rem;
         border: 1px solid rgba(255, 255, 255, 0.5); } }
 
 .slide-active {
@@ -375,7 +377,7 @@ body {
   .gallery img {
     margin: 1rem;
     border: 2px solid white;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     transition: all 0.3s cubic-bezier(0.39, 0.03, 0.04, 0.97);
     transform: scale(1);
     filter: grayscale(100%); }
@@ -393,21 +395,30 @@ body {
         width: 20rem;
         filter: grayscale(0%); } }
 
-#coin, #cassius, #nimbus, #yup {
+#coin,
+#cassius,
+#nimbus,
+#yup {
   width: 15rem;
   height: 15rem;
   margin: 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   border: 1px solid rgba(238, 238, 238, 0.3);
   padding: 2rem;
   cursor: pointer;
   background-color: #131313; }
   @media (max-width: 800px) {
-    #coin, #cassius, #nimbus, #yup {
+    #coin,
+    #cassius,
+    #nimbus,
+    #yup {
       width: 10rem;
       height: 10rem; } }
   @media (max-width: 350px) {
-    #coin, #cassius, #nimbus, #yup {
+    #coin,
+    #cassius,
+    #nimbus,
+    #yup {
       width: 9rem;
       height: 9rem; } }
 
@@ -430,50 +441,59 @@ body {
     #yup2 {
       max-height: 70vh; } }
 
-#riafill, #rialoader {
+#riafill,
+#rialoader {
   width: 15rem;
   height: 15rem;
   margin: 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   border: 1px solid rgba(238, 238, 238, 0.3);
   padding: 2rem;
   cursor: pointer;
   background-color: #eee; }
   @media (max-width: 800px) {
-    #riafill, #rialoader {
+    #riafill,
+    #rialoader {
       width: 10rem;
       height: 10rem; } }
   @media (max-width: 350px) {
-    #riafill, #rialoader {
+    #riafill,
+    #rialoader {
       width: 9rem;
       height: 9rem; } }
 
-#coin2, #cassius2, #nimbus2 {
+#coin2,
+#cassius2,
+#nimbus2 {
   width: 45rem;
   height: 45rem;
   padding: 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   background: #131313; }
   @media (max-width: 800px) {
-    #coin2, #cassius2, #nimbus2 {
+    #coin2,
+    #cassius2,
+    #nimbus2 {
       border: none;
       width: 100vw;
       height: 100vw; } }
 
-#riafill2, #rialoader2 {
+#riafill2,
+#rialoader2 {
   width: 45rem;
   height: 45rem;
   padding: 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   background: #eee; }
   @media (max-width: 800px) {
-    #riafill2, #rialoader2 {
+    #riafill2,
+    #rialoader2 {
       border: none;
       width: 100vw;
       height: 100vw; } }
 
 .modal {
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
 
 .modal__overlay {
   position: fixed;
@@ -534,14 +554,14 @@ body {
   color: rgba(0, 0, 0, 0.8); }
 
 .modal__btn {
-  font-size: .875rem;
+  font-size: 0.875rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border-style: none;
   border-width: 0;
   cursor: pointer;
@@ -556,11 +576,12 @@ body {
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  transition: -webkit-transform .25s ease-out;
-  transition: transform .25s ease-out;
-  transition: transform .25s ease-out,-webkit-transform .25s ease-out; }
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
 
-.modal__btn:focus, .modal__btn:hover {
+.modal__btn:focus,
+.modal__btn:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
@@ -1371,6 +1392,7 @@ body {
       width: 100vw; } }
   .skillset.animation {
     margin-top: 0;
+    padding-top: 5rem;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -1401,7 +1423,7 @@ body {
       margin: 2rem;
       position: relative; }
       .skillset__card-icon img {
-        opacity: .3; }
+        opacity: 0.3; }
     .skillset__card-title {
       display: flex;
       flex-direction: row;
@@ -1451,7 +1473,7 @@ body {
     .skillset__card-description {
       width: 100%;
       height: 13rem;
-      border-radius: .8rem;
+      border-radius: 0.8rem;
       background: rgba(19, 19, 19, 0.8);
       display: flex;
       flex-direction: row;
